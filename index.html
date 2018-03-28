@@ -11,66 +11,12 @@
     <meta name="author" content="恒益九州">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        body,html{
-            margin:0;
-            padding:0;
-        }
-        .box{
-            height:200px;
-            display:grid;
-            grid-template-columns:200px 1fr 200px;
-        }
-        .left{
-            background:#2d8391;
-        }
-        .main{
-            background:#ffcccc;
-        }
-        .right{
-            background:#f00283;
-        }
-    </style>
-        <script>
-        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
-            var version = parseFloat(RegExp.$1);
-            if (version > 2.3) {
-                var phoneScale = parseInt(window.screen.width) / 360;
-                document.write('<meta name="viewport" content="width=360, initial-scale=' + phoneScale +
-                    ', minimum-scale=' + phoneScale + ', maximum-scale=' + phoneScale +
-                    ', target-densitydpi=device-dpi">');
-            } else {
-                document.write('<meta name="viewport" content="width=360, target-densitydpi=device-dpi">');
-            }
-        } else {
-            document.write('<meta name="viewport" content="width=360, user-scalable=no">');
-        }
-    </script>
 </head>
 <body id="allmap" style="-webkit-overflow-scrolling: touch;">
-    <div id="videoPlayWindow" style="background:rgba(0,0,0,0.95);width:100%;height:100%;position:fixed;left:0;top:0;z-index:9999999;display:none;">
-        <a href="javascript:;" id="closeVideo" style="width:26px;height:26px;background:url('/Home/sce_h5/img/close.png') no-repeat;background-size:cover;position:fixed;right:20px;top:20px;position:10000010"></a>
-        <div id="videoWrap"></div>
-    </div>
     <div id="copyPage">
         <div id="pageWrap" style="width:360px;height:572px;overflow:hidden;
                 background-color:#fff;
         position:relative;">
-            <style>
-                *{
-                    padding:0;
-                    margin:0;
-                    box-sizing: content-box;
-                }
-                li {
-                    list-style: none;
-                    padding:0;
-                    margin:0;
-                }
-                a{
-                    text-decoration:none;
-                }
-            </style>
                                         <div id="p0" class="cube" style="
                 width:360px;
                 height:225px;
@@ -83,9 +29,5 @@
                                                         </div>
                                                                                                                                         </div>
     </div>
-    <div style="display:none">
-        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1264525270'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1264525270%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1264525270"><a href="http://www.cnzz.com/stat/website.php?web_id=1264525270" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif"></a></span><script src=" https://s22.cnzz.com/z_stat.php?id=1264525270&amp;show=pic" type="text/javascript"></script><script src="https://c.cnzz.com/core.php?web_id=1264525270&amp;show=pic&amp;t=z" charset="utf-8" type="text/javascript"></script>
-    </div>
-    <script src="https://kfadsale.hy9z.com/Public/Js/Advertisers/landingExterJs.js"></script>   
 </body>
 </html>
