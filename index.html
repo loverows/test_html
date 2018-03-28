@@ -47,13 +47,162 @@
         }
     </script>
 </head>
-<body>
-    <a href="http://wpa.qq.com/msgrd?v=3&uin=1099446401&site=qq&menu=yes">kladsf </a>
-    
-        <div style="display:none">
-        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1264525270'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1264525270%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+<body id="allmap" style="-webkit-overflow-scrolling: touch;">
+    <div id="videoPlayWindow" style="background:rgba(0,0,0,0.95);width:100%;height:100%;position:fixed;left:0;top:0;z-index:9999999;display:none;">
+        <a href="javascript:;" id="closeVideo" style="width:26px;height:26px;background:url('/Home/sce_h5/img/close.png') no-repeat;background-size:cover;position:fixed;right:20px;top:20px;position:10000010"></a>
+        <div id="videoWrap"></div>
     </div>
-        <script src="https://kfadsale.hy9z.com/Public/Js/Advertisers/landingExterJs.js"></script>
+    <div id="copyPage">
+        <div id="pageWrap" style="width:360px;height:572px;overflow:hidden;
+                background-color:#fff;
+        position:relative;">
+            <style>
+                *{
+                    padding:0;
+                    margin:0;
+                    box-sizing: content-box;
+                }
+                li {
+                    list-style: none;
+                    padding:0;
+                    margin:0;
+                }
+                a{
+                    text-decoration:none;
+                }
+            </style>
+                                        <div id="p0" class="cube" style="
+                width:360px;
+                height:225px;
+                top:0px;
+                                position:absolute;
+                z-index:10001;
+                left:0px;
+                                opacity:1;transform:rotate(0deg);-wbkit-transform:rotate(0deg);">
+                                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=451212456&amp;site=qq&amp;menu=yes" style="display:block;width:100%;height:100%;"><img src="http://source.huigoufang.com/59fa8055425a7.jpg" style="width:100%;height:100%;border-radius:0px;"></a>
+                                                        </div>
+                                                                                                                                        </div>
+    </div>
+    <div style="display:none">
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1264525270'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1264525270%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1264525270"><a href="http://www.cnzz.com/stat/website.php?web_id=1264525270" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif"></a></span><script src=" https://s22.cnzz.com/z_stat.php?id=1264525270&amp;show=pic" type="text/javascript"></script><script src="https://c.cnzz.com/core.php?web_id=1264525270&amp;show=pic&amp;t=z" charset="utf-8" type="text/javascript"></script>
+    </div>
+    <script src="https://kfadsale.hy9z.com/Public/Js/Advertisers/landingExterJs.js"></script>
     <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <script>
+        var abc = window.location.href.replace('&','@!@');
+        $.get('https://kfapi.hy9z.com/index/get_weChat_share_sing?appId=wx59a38e48c9c89104&appSecret=ce1a3b79fd8b03167fa3fe5cbd6d6c7c&current_url='+abc,function(data){
+            wx.config({
+                debug: false,
+                appId: data.appId,
+                timestamp: data.timestamp,
+                nonceStr: data.nonceStr,
+                signature: data.signature,
+                jsApiList: [
+                    'checkJsApi',
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage',
+                    'onMenuShareQQ',
+                    'onMenuShareWeibo',
+                    'hideMenuItems',
+                    'showMenuItems',
+                    'hideAllNonBaseMenuItem',
+                    'showAllNonBaseMenuItem',
+                    'translateVoice',
+                    'startRecord',
+                    'stopRecord',
+                    'onRecordEnd',
+                    'playVoice',
+                    'pauseVoice',
+                    'stopVoice',
+                    'uploadVoice',
+                    'downloadVoice',
+                    'chooseImage',
+                    'previewImage',
+                    'uploadImage',
+                    'downloadImage',
+                    'getNetworkType',
+                    'openLocation',
+                    'getLocation',
+                    'hideOptionMenu',
+                    'showOptionMenu',
+                    'closeWindow',
+                    'scanQRCode',
+                    'chooseWXPay',
+                    'openProductSpecificView',
+                    'addCard',
+                    'chooseCard',
+                    'openCard'
+                ]
+            });
+            wx.ready(function(){
+                //分享给朋友
+                wx.onMenuShareAppMessage({
+                    title: '未命名', // 分享标题
+                    desc: '我在矩作创作的长页作品,速来围观!', // 分享描述
+                    link: data.url, // 分享链接
+                    imgUrl: 'http://source.huigoufang.com/5a38849db7f52.jpg', // 分享图标
+                    type: '', // 分享类型,music、video或link，不填默认为link
+                    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+                //分享到朋友圈
+                wx.onMenuShareTimeline({
+                    title: '未命名', // 分享标题
+                    link: data.url, // 分享链接
+                    imgUrl: 'http://source.huigoufang.com/5a38849db7f52.jpg', // 分享图标
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+                //分享到Q
+                wx.onMenuShareQQ({
+                    title: '未命名', // 分享标题
+                    desc: '我在矩作创作的长页作品,速来围观!', // 分享描述
+                    link: data.url, // 分享链接
+                    imgUrl: 'http://source.huigoufang.com/5a38849db7f52.jpg', // 分享图标
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+                //分享到腾讯微博
+                wx.onMenuShareWeibo({
+                    title: '未命名', // 分享标题
+                    desc: '我在矩作创作的长页作品,速来围观!', // 分享描述
+                    link: data.url, // 分享链接
+                    imgUrl: 'http://source.huigoufang.com/5a38849db7f52.jpg', // 分享图标
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+                //分享到QQ空间
+                wx.onMenuShareQZone({
+                    title: '未命名', // 分享标题
+                    desc: '我在矩作创作的长页作品,速来围观!', // 分享描述
+                    link: data.url, // 分享链接
+                    imgUrl: 'http://source.huigoufang.com/5a38849db7f52.jpg', // 分享图标
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+            })
+        })
+    </script>
 </body>
 </html>
